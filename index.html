@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Femco Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Femco store</h2>
+      <button id="openModal">Create new</button>
+    </nav>
+    <div id="products"></div>
+
+    <div class="hidden" id="productModal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+
+        <form id="form">
+          <div class="form-group">
+            <label for="title">Product name:</label><br />
+            <input id="title" type="text" required placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <label for="price">Product price:</label><br />
+            <input id="price" type="number" step="any" placeholder="Price" required/>
+          </div>
+          <div class="form-group">
+            <label for="category">Product category:</label><br />
+            <input id="category" type="text" placeholder="Category" required/>
+          </div>
+          <div class="form-group">
+            <label for="image">Product image link:</label><br />
+            <input id="image" type="url" placeholder="Image URL"required/>
+          </div>
+          <div class="form-group">
+            <label for="description">Product description:</label><br />
+            <textarea name="" id="description" placeholder="Description" required></textarea>
+          </div>
+          <div class="btn-container">
+            <button type="submit">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
